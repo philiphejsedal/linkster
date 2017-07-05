@@ -1,0 +1,13 @@
+<p id="notice"><%= notice %></p>
+
+<div class="page-header">
+  <h1>Linkster <small>Post and share great links</small></h1>
+</div>
+
+<div class="list-group">
+  <%@links.each do |link| %>
+  <%= link_to link.title, link.url, class: "list-group-item" %>
+  <%end%>
+  </div>
+
+
